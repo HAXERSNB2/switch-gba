@@ -26,7 +26,7 @@ RUN mkdir /home/emulator/ && \
     cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ../mgba -DBUILD_PYTHON=ON -DBUILD_SERVER=OFF -DBUILD_QT=OFF -DBUILD_SDL=OFF && \
     make mgba-py-develop
 
-COPY ./src /home/src
+# COPY ./src /home/src
 
 EXPOSE 8888
 
